@@ -26,6 +26,8 @@ services:
     image: ghcr.io/claperco/claper:latest # or build: .
     ports:
       - 4000:4000
+      - 80:4000
+      - 443:4000
     volumes:
       - "claper-uploads:/app/uploads"
     healthcheck:
